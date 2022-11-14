@@ -1,0 +1,191 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+
+.header {
+    background-color: #F2F4F7;
+    padding-top: 25px;
+    @extend %sf-500;
+    color: $main;
+    padding-bottom: 270px;
+    background-image: url('../images/bg-header.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px 24px;
+        margin-bottom: 80px;
+
+        &-contact {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+.header__top-contact a {
+    color: $accent;
+    font-size: 14px;
+    line-height: 18px;
+    @extend %sf-500;
+}
+
+.header__top-contact--ftelephone{
+    padding-left: 37px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url('../images/icons/phone-icon.svg');
+        width: 24px;
+        height: 24px;
+        top: -3px;
+        left: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+.header__top-contact--email{
+    padding-left: 30px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url('../images/icons/email-icon.svg');
+        width: 24px;
+        height: 24px;
+        top: -3px;
+        left: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu__list-item a {
+    color: $main;
+}
+
+.menu__list li+li {
+    margin-left: 24px;
+}
+
+.header__top-contact a+a {
+    margin-left: 16px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: #2D66EE;
+    @extend %inter-700;
+}
+
+.header__bottom {
+
+    &-text{
+        max-width: 600px;
+        width: 100%;
+        margin-bottom: 65px;
+    }
+
+    &-text--title {
+        @extend %inter-700;
+        font-size: 36px;
+        line-height: 52px;
+        margin-bottom: 24px;
+    }
+
+    &-text-descr {
+        @extend %sf-500;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    
+    &-callback{
+        max-width: 676px;
+        width: 100%;
+        background-color: #fff;
+        padding: 24px;
+        border-radius: 12px;
+        &--text{
+            @extend %inter-700;
+            font-size: 20px;
+            line-height: 24px;
+            max-width: 440px;
+            margin-bottom: 34px;
+        }
+    }
+
+    &-callback--form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.accent_text {
+    color: $accent;
+}
+
+.consult__btn{
+    max-width:132px;
+    text-align: left;
+}
+
+.about {
+    &__inner {
+        display: flex;
+    }
+}
+
+.project__items-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.apps__list {
+    display: flex;
+
+    &-items {
+        display: flex;
+    }
+}
+
+.discuss__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stages__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.faq__items,
+.book__form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footer__inner {
+    display: flex;
+}
+
+
+
+@import 'media';

@@ -1,0 +1,23 @@
+.container {
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.subtitle-text{
+    @extend %sf-500;
+    color: $sub-text;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.input-info{
+    border: none;
+    border-bottom:1px solid #D0D5DD;
+    padding-bottom: 8px;
+}
+
+.btn{
+    @extend %btn;
+}
