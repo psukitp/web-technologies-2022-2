@@ -26,6 +26,12 @@ body{
     margin: 0 auto;
 }
 
+@media  (max-width: 768px){
+    .container{
+        padding: 0 40px;
+    }
+}
+
 .subtitle-text{
     @extend %sf-500;
     color: $sub-text;
@@ -42,4 +48,32 @@ body{
 
 .btn{
     @extend %btn;
+}
+
+.title{
+    @extend %inter-700;
+    font-size: 36px;
+    line-height: 52px;
+    color: $main;
+}
+
+.descr{
+    @extend %sf-500;
+    font-size: 15px;
+    line-height: 20px;
+    color: $main;
+}
+
+.subtitle{
+    @extend %sf-600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $main;
+}
+
+.text{
+    @extend %sf-400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #344054;
 }

@@ -17,6 +17,15 @@
 }
 
 @font-face {
+    font-family: 'SF Pro Text SemiBold';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: local('SF Pro Text SemiBold'),
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2');
+}
+
+@font-face {
     font-family: 'SF Pro Text Bold';
     font-weight: 700;
     font-style: normal;
